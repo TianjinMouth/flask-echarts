@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>监控页面</title>
+    {% for jsfile_name in script_list %}
+        <script src="{{ host }}/{{ jsfile_name }}.js"></script>
+    {% endfor %}
+{##}
+{#    <style type="text/css">#}
+{##}
+{#    body {background-image:url(/static/test.jpeg?v=1);#}
+{#          background-repeat:no-repeat;#}
+{#          background-attachment:fixed;}#}
+{##}
+{#    </style>#}
+</head>
+  {{ myechart|safe }}
+</body>
+
+</html>
